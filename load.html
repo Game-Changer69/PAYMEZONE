@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body{
+            background-color: beige;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+         }
+        .load-con{
+            right:100px;
+          width: 80%;
+          height: 30px;
+          background-color: lime;
+          border-radius: 15px;
+          overflow: hidden;  
+        }    
+        .load-bar{
+            width: 0;
+            height: 100%;
+            background-color: gold;
+            animation: load 3s forwards ;
+        }
+        @keyframes load{
+            0%{width: 0;}
+            35%{width: 35%;}
+            50%{width: 50%;}
+            90%{width: 90%;}
+            100%{width: 100%;}
+        }
+        h3{
+            font-size: 24px;
+            margin-bottom: 20px;
+            transition: opacity 1s ease;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3 id="load">Loading...</h3>
+    <div class="load-con">
+        <div class="load-bar"></div>
+    </div>
+    <br>
+    <a href="main.html" target="_self">You Can Continue From Here</a>
+    <br>
+    <br>
+    <br><hr>
+    <cite style="font-size: 100px;">PAYMEZONE.com</cite><br>
+    <img src="Screenshot 2025-01-31 151536.png" alt="Check Your Internet" width="400px" height="600px">
+    
+</body>
+</html>
